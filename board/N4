@@ -6,6 +6,7 @@ input BTNL
 input BTNR
 input RST
 
+# [15:0] SW_INPUT
 input SW0
 input SW1
 input SW2
@@ -23,6 +24,7 @@ input SW13
 input SW14
 input SW15
 
+# [15:0] NAIVE_LEDS_OUTPUT
 output LD0
 output LD1
 output LD2
@@ -40,6 +42,7 @@ output LD13
 output LD14
 output LD15
 
+# RGB_LEDS_OUTPUT
 output R16
 output G16
 output B16
@@ -47,6 +50,8 @@ output R17
 output G17
 output B17
 
+
+# ---- SEG7_SEGS_OUTPUT
 output SEG0A
 output SEG0B
 output SEG0C
@@ -119,6 +124,8 @@ output SEG7F
 output SEG7G
 output DEC7P
 
+
+# ---- VGA_OUTPUT
 rt_output VGA_VSYNC
 rt_output VGA_HSYNC
 rt_output VGA_BLANK_N
@@ -147,5 +154,6 @@ rt_output VGA_B5
 rt_output VGA_B6
 rt_output VGA_B7
 
+# KEYBOARD_INPUT
 rt_input PS2_CLK
 rt_input PS2_DAT
